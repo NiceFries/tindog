@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+#head-app {
+    padding: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.dog-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    width: 97%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.info,
+.bio {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+.dog-profile h2 {
+    font-size: 2rem;
+}
+
+.dog-profile h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.bio {
+    bottom: -15px;
+}
+
+.like-badge,
+.nope-badge {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    object-fit: contain;
+    display: none;
+    top: 5rem;
+}
+
+.like-badge {
+    rotate: -20deg;
+    right: 7rem;
+}
+
+.nope-badge {
+    rotate: 20deg;
+    left: 7rem;
+}
+
+#no-dogos {
+    color: black;
+    margin-top: 10em;
+}
+
+#swipes-control {
+    display: flex;
+    justify-content: center;
+    padding: 1.6em;
+}
+
+
+#heart-btn,
+#cross-btn {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px #e9e9ea;
+    width: 92px;
+    height: 92px;
+    margin: 0 .6em;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#heart-btn:hover,
+#heart-btn:focus {
+    background: #DBFFF4;
+}
+
+#cross-btn:hover,
+#cross-btn:focus {
+    background: #FFE7EF;
+}
+
+#heart-btn:active,
+#cross-btn:active {
+    transform: scale(1.1);
+}
